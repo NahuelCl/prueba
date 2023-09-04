@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Classification</title>
+</head>
+<body>
+    <h1>Diabetes Classification</h1>
+    <form id="classification-form" action="/predict" method="post">
+        <label for="Pregnancies">Pregnancies</label>                       					
+        <input type="number" id="Pregnancies" name="Pregnancies" required><br><br>
+
+        <label for="glucose">Glucose Level:</label>
+        <input type="number" id="glucose" name="Glucose" required><br><br>
+        
+        <label for="blood-pressure">Blood Pressure:</label>
+        <input type="number" id="blood-pressure" name="BloodPressure" required><br><br>
+
+        <label for="SkinThickness">SkinThickness:</label>
+        <input type="number" id="SkinThickness" name="SkinThickness" required><br><br>
+        
+        <label for="insulin">Insulin Level:</label>
+        <input type="number" id="insulin" name="Insulin" required><br><br>
+        
+        <label for="bmi">BMI (Body Mass Index):</label>
+        <input type="number" step="0.01" id="bmi" name="BMI" required><br><br>
+
+        <label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction:</label>
+        <input type="number" step="0.01" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age" required><br><br>
+        
+        <button type="submit">Classify</button>
+    </form>
+</body>
+</html>
